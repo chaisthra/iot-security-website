@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Viewer - IoT Security Threat Detection for SMEs</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .viewer-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .viewer-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        
+        .viewer-controls {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .viewer-controls a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .responsive-viewer {
+            flex-grow: 1;
+            width: 100%;
+            height: calc(100vh - 70px); /* Adjust based on header height */
+            border: none;
+        }
+        
+        @media (max-width: 768px) {
+            .viewer-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .viewer-title {
+                margin-bottom: 0.75rem;
+            }
+            
+            .viewer-controls {
+                width: 100%;
+                justify-content: space-between;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="viewer-header">
+        <div class="viewer-title" id="pdf-title">Loading PDF...</div>
+        <div class="viewer-controls">
+            <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Dashboard</a>
+            <a href="#" id="pdf-download" download><i class="fas fa-download"></i> Download</a>
+        </div>
+    </div>
+    
+    <iframe id="pdf-frame" class="responsive-viewer" src="" frameborder="0"></iframe>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get PDF path from URL parameter
+            const urlParams = new URLSearchParams(window.location.search);
+            const pdfPath = urlParams.get('pdf');
+            const pdfTitle = urlParams.get('title') || 'PDF Document';
+            
+            // Update title
+            document.getElementById('pdf-title').textContent = pdfTitle;
+            document.title = pdfTitle + ' - IoT Security Threat Detection';
+            
+            // Set iframe source
+            if (pdfPath) {
+                const pdfFrame = document.getElementById('pdf-frame');
+                pdfFrame.src = pdfPath;
+                
+                // Update download link
+                const downloadLink = document.getElementById('pdf-download');
+                downloadLink.href = pdfPath;
+                downloadLink.setAttribute('download', pdfTitle + '.pdf');
+            } else {
+                document.getElementById('pdf-title').textContent = 'PDF not found';
+            }
+        });
+    </script>
+</body>
+</html> 

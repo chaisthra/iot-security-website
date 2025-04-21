@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Security Threat Detection for SMEs - Case Study Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="#" class="logo">
+                    <i class="fas fa-shield-alt"></i> IoT Security
+                </a>
+            </div>
+            <button id="nav-toggle" class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="nav-menu" class="nav-menu">
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#dashboard">Dashboard</a></li>
+                    <li><a href="https://www.unb.ca/cic/datasets/iotdataset-2023.html" target="_blank">Dataset</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>IoT Security Threat Detection</h1>
+            <p class="subtitle">A Machine Learning Approach Using CIC-IoT Dataset</p>
+            <p class="description">Enhancing security for Small and Medium Enterprises through advanced threat detection</p>
+            <div class="cta-buttons">
+                <a href="./pdf_viewer.html?pdf=../output/introduction_iot_security_study.pdf&title=Introduction" class="cta-button">View Full Report</a>
+                <a href="https://www.unb.ca/cic/datasets/iotdataset-2023.html" class="cta-button secondary" target="_blank">Dataset Link</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology Section -->
+    <section class="about bg-light" id="methodology">
+        <div class="container">
+            <h2 class="text-center mb-4">Research Methodology</h2>
+            <p class="text-center mb-4">Our comprehensive approach combines data analysis, machine learning model development, and SME-oriented implementation strategies to create effective IoT security solutions.</p>
+            
+            <div class="about-grid">
+                <div class="about-item">
+                    <div class="about-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h4>Data Analysis</h4>
+                    <p>We analyzed the CIC-IoT dataset to identify patterns and signatures of various attack types on IoT devices.</p>
+                </div>
+                <div class="about-item">
+                    <div class="about-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h4>Machine Learning</h4>
+                    <p>We developed and optimized machine learning models to detect security threats while minimizing resource usage.</p>
+                </div>
+                <div class="about-item">
+                    <div class="about-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h4>Implementation</h4>
+                    <p>We created practical implementation frameworks tailored to the resource constraints of SMEs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section class="dashboard" id="dashboard">
+        <div class="container">
+            <div class="dashboard-header">
+                <h2 class="dashboard-title">Case Study Dashboard</h2>
+                <a href="../output/introduction_iot_security_study.pdf" target="_blank" class="btn">
+                    <i class="fas fa-file-pdf"></i> Full Report
+                </a>
+            </div>
+
+            <!-- PDF Viewer -->
+            <div class="pdf-container" id="pdf-container">
+                <div class="pdf-header">
+                    <h3 class="pdf-title" id="pdf-title">Introduction</h3>
+                    <div class="pdf-buttons">
+                        <a href="../output/introduction_iot_security_study.pdf" class="btn" id="pdf-download" download>
+                            <i class="fas fa-download"></i> Download
+                        </a>
+                    </div>
+                </div>
+                <!-- Removed iframe to use standalone viewer instead -->
+            </div>
+
+            <!-- Stages Cards -->
+            <div class="stage-cards">
+                <!-- Introduction -->
+                <div class="card stage-card">
+                    <div class="card-header">
+                        <div class="stage-icon bg-primary">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                        <div>
+                            <h4 class="card-title">Introduction & Conclusion</h4>
+                            <div class="card-subtitle">Overview and final findings</div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>Introduction to the case study and final conclusions from the research.</p>
+                        <ul class="step-list">
+                            <li>
+                                <a href="../output/introduction_iot_security_study.pdf" class="pdf-link" data-pdf="../output/introduction_iot_security_study.pdf">
+                                    <i class="fas fa-file-pdf"></i> Introduction
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../output/conclusion_iot_security_threat_detection.pdf" class="pdf-link" data-pdf="../output/conclusion_iot_security_threat_detection.pdf">
+                                    <i class="fas fa-file-pdf"></i> Conclusion
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Stage 1 -->
+                <div class="card stage-card">
+                    <div class="card-header">
+                        <div class="stage-icon stage-1">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div>
+                            <h4 class="card-title">Stage 1: Preliminary Assessment</h4>
+                            <div class="card-subtitle">Dataset analysis & context definition</div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>Initial dataset exploration, context definition for SMEs, and identification of critical metrics.</p>
+                        <ul class="step-list">
+                            <li>
+                                <a href="../output/stage1_step1_dataset_familiarization.pdf" class="pdf-link" data-pdf="../output/stage1_step1_dataset_familiarization.pdf">
+                                    <i class="fas fa-file-pdf"></i> Dataset Familiarization
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../output/stage1_step1_attack_patterns_analysis.pdf" class="pdf-link" data-pdf="../output/stage1_step1_attack_patterns_analysis.pdf">
+                                    <i class="fas fa-file-pdf"></i> Attack Patterns Analysis
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../output/stage1_step2_sme_context_definition.pdf" class="pdf-link" data-pdf="../output/stage1_step2_sme_context_definition.pdf">
+                                    <i class="fas fa-file-pdf"></i> SME Context Definition
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../output/stage1_step3_critical_metrics.pdf" class="pdf-link" data-pdf="../output/stage1_step3_critical_metrics.pdf">
+                                    <i class="fas fa-file-pdf"></i> Critical Metrics Identification
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Stage 2 -->
+                <div class="card stage-card">
+                    <div class="card-header">
+                        <div class="stage-icon stage-2">
+                            <i class="fas fa-broom"></i>
+                        </div>
+                        <div>
+                            <h4 class="card-title">Stage 2: Data Preparation</h4>
+                            <div class="card-subtitle">Cleaning & feature engineering</div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>Data quality assessment and feature engineering to prepare for model development.</p>
+                        <ul class="step-list">
+                            <li>
+                                <a href="../output/stage2_step1_quality_assessment.pdf" class="pdf-link" data-pdf="../output/stage2_step1_quality_assessment.pdf">
+                                    <i class="fas fa-file-pdf"></i> Quality Assessment
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../output/stage2_step2_feature_engineering.pdf" class="pdf-link" data-pdf="../output/stage2_step2_feature_engineering.pdf">
+                                    <i class="fas fa-file-pdf"></i> Feature Engineering
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Stage 3 -->
+                <div class="card stage-card">
+                    <div class="card-header">
+                        <div class="stage-icon stage-3">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div>
+                            <h4 class="card-title">Stage 3: Exploratory Analysis</h4>
+                            <div class="card-subtitle">Pattern & correlation analysis</div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>Exploratory analysis to identify patterns, correlations, and anomaly criteria.</p>
+                        <ul class="step-list">
+                            <li>
+                                <a href="../output/stage3_step1_pattern_analysis.pdf" class="pdf-link" data-pdf="../output/stage3_step1_pattern_analysis.pdf">
+                                    <i class="fas fa-file-pdf"></i> Pattern Analysis
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../output/stage3_step2_correlation_analysis.pdf" class="pdf-link" data-pdf="../output/stage3_step2_correlation_analysis.pdf">
+                                    <i class="fas fa-file-pdf"></i> Correlation Analysis
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../output/stage3_step3_anomaly_identification.pdf" class="pdf-link" data-pdf="../output/stage3_step3_anomaly_identification.pdf">
+                                    <i class="fas fa-file-pdf"></i> Anomaly Identification
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Stage 4 -->
+                <div class="card stage-card">
+                    <div class="card-header">
+                        <div class="stage-icon stage-4">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div>
+                            <h4 class="card-title">Stage 4: Model Development</h4>
+                            <div class="card-subtitle">Base models & SME optimization</div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>Development of machine learning models and optimization for SME environments.</p>
+                        <ul class="step-list">
+                            <li>
+                                <a href="../output/stage4_step1_base_model_development.pdf" class="pdf-link" data-pdf="../output/stage4_step1_base_model_development.pdf">
+                                    <i class="fas fa-file-pdf"></i> Base Model Development
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../output/stage4_step2_sme_optimized_learning.pdf" class="pdf-link" data-pdf="../output/stage4_step2_sme_optimized_learning.pdf">
+                                    <i class="fas fa-file-pdf"></i> SME-Optimized Learning
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Stage 5 -->
+                <div class="card stage-card">
+                    <div class="card-header">
+                        <div class="stage-icon stage-5">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div>
+                            <h4 class="card-title">Stage 5: Validation & Refinement</h4>
+                            <div class="card-subtitle">Performance metrics & expert validation</div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>Evaluation of model performance and validation by domain experts.</p>
+                        <ul class="step-list">
+                            <li>
+                                <a href="../output/stage5_step1_performance_metrics.pdf" class="pdf-link" data-pdf="../output/stage5_step1_performance_metrics.pdf">
+                                    <i class="fas fa-file-pdf"></i> Performance Metrics
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../output/stage5_step2_domain_expert_validation.pdf" class="pdf-link" data-pdf="../output/stage5_step2_domain_expert_validation.pdf">
+                                    <i class="fas fa-file-pdf"></i> Domain Expert Validation
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Stage 6 -->
+                <div class="card stage-card">
+                    <div class="card-header">
+                        <div class="stage-icon stage-6">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <div>
+                            <h4 class="card-title">Stage 6: Reporting & Visualization</h4>
+                            <div class="card-subtitle">Results documentation & visualization</div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>Comprehensive documentation of findings and visualization of results.</p>
+                        <ul class="step-list">
+                            <li>
+                                <a href="../output/stage6_reporting_and_visualization.pdf" class="pdf-link" data-pdf="../output/stage6_reporting_and_visualization.pdf">
+                                    <i class="fas fa-file-pdf"></i> Results & Visualization
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Stage 7 -->
+                <div class="card stage-card">
+                    <div class="card-header">
+                        <div class="stage-icon stage-7">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <div>
+                            <h4 class="card-title">Stage 7: Recommendations</h4>
+                            <div class="card-subtitle">Implementation framework & future work</div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>Practical implementation recommendations and future research directions.</p>
+                        <ul class="step-list">
+                            <li>
+                                <a href="../output/stage7_step1_implementation_framework.pdf" class="pdf-link" data-pdf="../output/stage7_step1_implementation_framework.pdf">
+                                    <i class="fas fa-file-pdf"></i> Implementation Framework
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../output/stage7_step2_future_enhancement_areas.pdf" class="pdf-link" data-pdf="../output/stage7_step2_future_enhancement_areas.pdf">
+                                    <i class="fas fa-file-pdf"></i> Future Enhancement Areas
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="text-center mb-4">About the Research</h2>
+            <p class="text-center mb-4">This research addresses the critical cybersecurity challenges faced by Small and Medium-sized Enterprises (SMEs) in protecting their Internet of Things (IoT) deployments.</p>
+            
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h4>Research Objectives</h4>
+                    <ul>
+                        <li>Identify and characterize the most relevant security threats to IoT deployments in SME environments</li>
+                        <li>Determine critical network traffic metrics that effectively indicate different types of attacks</li>
+                        <li>Develop machine learning models optimized for SME resource constraints</li>
+                        <li>Create a tiered implementation framework based on available resources</li>
+                        <li>Establish practical guidelines for model selection and alert handling</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-body">
+                    <h4>Dataset Information</h4>
+                    <p>The research utilizes the CIC-IoT-2023 dataset, which contains network traffic from various IoT devices under normal conditions and multiple attack scenarios. Key characteristics include:</p>
+                    <ul>
+                        <li>Traffic from multiple IoT device types (cameras, thermostats, smart appliances, etc.)</li>
+                        <li>Labeled attack scenarios including DDoS, reconnaissance, and spoofing attacks</li>
+                        <li>Rich feature set with over 80 network traffic attributes</li>
+                        <li>Both benign and malicious traffic patterns for comparative analysis</li>
+                    </ul>
+                    <div class="mt-3">
+                        <a href="https://www.unb.ca/cic/datasets/iotdataset-2023.html" target="_blank" class="btn">
+                            <i class="fas fa-database"></i> Access Dataset
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About</h3>
+                    <p>This research project focuses on IoT security for Small and Medium Enterprises using the CIC-IoT-2023 dataset to develop effective threat detection strategies.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: chaithra3nats@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Researchers</h3>
+                    <p>Chaithra N, Janhvi Jha<br>
+                    Dept of Computer Science and Engineering (AI & ML)<br>
+                    Jain University, Bangalore, India</p>
+                    <p>Dr Anu Sayal<br>
+                    Senior Lecturer<br>
+                    Taylor's Business School, Taylor's University, Malaysia</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 IoT Security Research. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
